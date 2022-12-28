@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "esbuild",
+    "greasemonkey",
+    "linebreak",
+    "outfile",
+    "sqrtox",
+    "userscript"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.tabSize": 2
+}

@@ -5,11 +5,11 @@ export const isFeederRoomUrl = (href: string): boolean => {
     return false;
   }
 
-  if (!/www[12]\.x-feeder\.info/.test(hostname)) {
+  if (!/^www[12]\.x-feeder\.info$/.test(hostname)) {
     return false;
   }
 
-  if (!/\/\w{4,16}\//.test(pathname)) {
+  if (!/^\/\w{4,16}\/$/.test(pathname)) {
     return false;
   }
 

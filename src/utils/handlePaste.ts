@@ -9,6 +9,10 @@ export const handlePaste = ({ clipboardData }: ClipboardEvent): void => {
 
   const file = clipboardData.files[0];
 
+  if (!file) {
+    return;
+  }
+
   openDropzoneArea();
 
   const dropzone = getDropzone();

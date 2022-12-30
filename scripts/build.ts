@@ -13,7 +13,7 @@ import { readIcon } from '~/utils/readIcon';
     icon: await readIcon('./src/assets/icon.ico'),
     match: 'https://*.x-feeder.info/*/',
     exclude: 'https://*.x-feeder.info/*/*/*',
-    namespace: pkg.repository.url.replace(/^git\+|\.git$/, ''),
+    namespace: pkg.repository.url.replace(/^git\+|\.git$/g, ''),
     author: pkg.author,
     license: pkg.license,
     grant: 'unsafeWindow'
